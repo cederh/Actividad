@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; script-src 'self';">
+    <title>Portafolio Profesional - Inicio</title>
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    
+    <header class="cabecera">
+        <h1>Carlos Romero | Portafolio Profesional</h1>
+        <p>Desarrollo Web & Programación en JavaScript</p>
+    </header>
+
+    <div class="contenido">
+        <nav class="menu col-3 col-t-2">
+            <h2>Navegación</h2>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="principal col-9 col-t-4">
+            <section>
+                <h2>Bienvenido a mi Portafolio</h2>
+                <p>
+                    Hola, este es mi sitio web profesional desarrollado aplicando los fundamentos de HTML5 semántico, diseño responsivo y buenas prácticas de seguridad web.
+                </p>
+                <p>
+                    Aquí podrás conocer mi perfil, explorar los proyectos que he realizado y ponerte en contacto conmigo a través de un formulario con validación nativa.
+                </p>
+                <p>
+                    <a href="proyectos.html" class="boton">Ver mis Proyectos</a>
+                </p>
+            </section>
+
+            <section>
+                <h3>Áreas de Especialización</h3>
+                <ul>
+                    <li>Maquetación web semántica y accesible con HTML5.</li>
+                    <li>Estilos CSS, Modelo de Caja y diseño responsivo adaptado a dispositivos móviles.</li>
+                    <li>Validaciones de formularios y seguridad básica con CSP.</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="lateral col-12 col-t-6">
+            <h2><b>Estado: </b>Disponible para proyectos y prácticas profesionales.</h2>
+            <h3><b>Ubicación: </b>San Salvador, El Salvador.</h3>
+            <h3><b>Especialidad: </b>JavaScript & Frontend Development.</h3>
+            <p>
+                <a href="contacto.html" class="boton">Contactame</a>
+            </p>
+        </aside>
+    </div>
+
+    <footer class="pie">
+        &copy; Copyright 2026 - Carlos Romero. Todos los derechos reservados.
+    </footer>
+
 </body>
 </html>

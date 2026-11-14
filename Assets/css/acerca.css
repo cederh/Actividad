@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.cabecera,
+.menu,
+.principal,
+.pie,
+.lateral {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.cabecera {
+    background-color: #013E5F;
+    color: whitesmoke;
+}
+
+.cabecera h1 {
+    margin: 0 0 5px 0;
+}
+
+.cabecera p {
+    margin: 0;
+}
+
+.menu {
+    background-color: #cdd1d3;
+}
+
+.menu h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li>a {
+    text-decoration: none;
+    color: #013E5F;
+    display: block;
+    padding: 8px 5px;
+    font-weight: bold;
+}
+
+.menu ul li>a:hover {
+    background-color: #b0b5b8;
+}
+
+.menu ul li>a.activo {
+    background-color: #013E5F;
+    color: white;
+}
+
+.principal {
+    background-color: beige;
+}
+
+.principal h2,
+.principal h3 {
+    margin-top: 0;
+}
+
+.perfil-superior {
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.foto-perfil-top {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+    flex-shrink: 0;
+}
+
+.datos-perfil-top h2 {
+    margin: 0 0 5px 0;
+    color: #013E5F;
+}
+
+.datos-perfil-top p {
+    margin: 3px 0;
+}
+
+.bloque-info {
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+}
+
+.bloque-info h4 {
+    margin: 0 0 5px 0;
+    color: #013E5F;
+}
+
+.bloque-info .meta {
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.boton {
+    background-color: #013E5F;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.boton:hover {
+    background-color: #025988;
+}
+
+.lateral {
+    background-color: goldenrod;
+}
+
+.lateral h2,
+.lateral h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.lateral ul {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+.pie {
+    background-color: #3D5A98;
+    color: white;
+    text-align: center;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ========================================================
+   MEDIA QUERIES (SISTEMA RESPONSIVO DE CLASE)
+   ======================================================== */
+
+/* 1. Móviles: el contenido se vuelve bloque y se oculta el lateral */
+@media (max-width: 576px) {
+    .contenido {
+        display: block;
+    }
+
+    .lateral {
+        display: none;
+    }
+}
+
+/* 2. Tablets (min-width: 576px): Sistema de 6 columnas */
+@media (min-width: 576px) {
+    .col-t-1 {
+        width: 16.67%;
+    }
+
+    .col-t-2 {
+        width: 33.33%;
+    }
+
+    .col-t-3 {
+        width: 50%;
+    }
+
+    .col-t-4 {
+        width: 66.67%;
+    }
+
+    .col-t-5 {
+        width: 83.33%;
+    }
+
+    .col-t-6 {
+        width: 100%;
+    }
+}
+
+/* 3. Escritorio (min-width: 768px): Sistema de 12 columnas */
+@media (min-width: 768px) {
+
+    .col-1,
+    .col-t-1 {
+        width: 8.33%;
+    }
+
+    .col-2,
+    .col-t-2 {
+        width: 16.67%;
+    }
+
+    .col-3,
+    .col-t-3 {
+        width: 25%;
+    }
+
+    .col-4,
+    .col-t-4 {
+        width: 33.33%;
+    }
+
+    .col-5,
+    .col-t-5 {
+        width: 41.67%;
+    }
+
+    .col-6,
+    .col-t-6 {
+        width: 50%;
+    }
+
+    .col-7,
+    .col-t-7 {
+        width: 58.33%;
+    }
+
+    .col-8,
+    .col-t-8 {
+        width: 66.67%;
+    }
+
+    .col-9,
+    .col-t-9 {
+        width: 75%;
+    }
+
+    .col-10,
+    .col-t-10 {
+        width: 83.33%;
+    }
+
+    .col-11,
+    .col-t-11 {
+        width: 91.67%;
+    }
+
+    .col-12,
+    .col-t-12 {
+        width: 100%;
+    }
+}

@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; script-src 'self';">
+    <title>Portafolio Profesional - Acerca de mí</title>
+    <link rel="stylesheet" href="assets/css/acerca.css">
 </head>
 <body>
-    
+    <header class="cabecera">
+        <h1>Carlos Romero | Portafolio Profesional</h1>
+        <p>Ingeniero en Sistemas Informáticos</p>
+    </header>
+
+    <div class="contenido">
+        <nav class="menu col-3 col-t-2">
+            <h2>Navegación</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html" class="activo">Acerca de</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="principal col-9 col-t-4">
+            <section class="perfil-superior">
+                <img src="assets/img/perfil.jpg" alt="Foto de perfil de Carlos Romero" class="foto-perfil-top">
+                <div class="datos-perfil-top">
+                    <h2>Carlos Edenilson Romero Hernández</h2>
+                    <p><b>Profesión:</b> Ingeniero en Sistemas Informáticos</p>
+                    <p><b>Puesto actual:</b> Técnico Informático - Desarrollador (DTIC - MINSAL)</p>
+                    <p><b>Ubicación:</b> San Salvador / San Salvador, El Salvador</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Ingeniero en Sistemas Informáticos graduado de la <strong>Universidad de El Salvador</strong>, con sólida experiencia en desarrollo backend con <strong>PHP</strong> y <strong>Node.js</strong>, desarrollo frontend reactivo con <strong>Vue.js</strong> y <strong>JavaScript</strong>, diseño y consumo de <strong>APIs REST</strong>, y gestión de bases de datos relacionales en <strong>PostgreSQL</strong>, <strong>MySQL</strong> y <strong>MariaDB</strong>.
+                </p>
+                <p>
+                    Actualmente me desempeño como <strong>Técnico Informático - Desarrollador</strong> en la <strong>Dirección de Tecnologías de la Información y Comunicación (DTIC) del Ministerio de Salud (MINSAL)</strong>, enfocado en el desarrollo, soporte e <strong>interoperabilidad entre sistemas</strong> institucionales de salud pública (tales como el Sistema Integrado de Salud - SIS, Cubo Bacteriológico, Tamizaje Neonatal y Módulos de Laboratorio), implementados principalmente sobre el framework <strong>Symfony</strong>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Estudios Realizados</h3>
+                <div class="bloque-info">
+                    <h4>Ingeniería en Sistemas Informáticos</h4>
+                    <p class="meta">Universidad de El Salvador — Facultad Multidisciplinaria Oriental</p>
+                    <p>Periodo: 2013 – 2020 | San Miguel, San Miguel</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Experiencia Profesional</h3>
+
+                <div class="bloque-info">
+                    <h4>Técnico Informático - Desarrollador</h4>
+                    <p class="meta">Dirección de Tecnologías de la Información y Comunicación - MINSAL</p>
+                    <p><small>28/02/2022 – Actualidad | San Salvador, San Salvador</small></p>
+                    <p><b>Sistemas Desarrollados y Mantenidos:</b></p>
+                    <ul>
+                        <li><b>Sistema Integrado de Salud (SIS):</b> Desarrollo, mantenimiento e integración de módulos hospitalarios institucionales con <b>Symfony</b>.</li>
+                        <li><b>Cubo Bacteriológico:</b> Sistema para el procesamiento, análisis y control de cultivos bacteriológicos desarrollado con <b>Symfony</b>.</li>
+                        <li><b>Tamizaje Neonatal:</b> Aplicación web para el registro, seguimiento y control preventivo neonatal desarrollada con <b>Vue.js</b> y <b>Node.js</b>.</li>
+                        <li><b>Módulo de Laboratorio:</b> Sistema de procesamiento de órdenes, muestras y resultados clínicos desarrollado en <b>PHP</b>.</li>
+                    </ul>
+                    <p><b>Funciones y Responsabilidades Técnicas:</b></p>
+                    <ul>
+                        <li><b>Interoperabilidad entre sistemas:</b> Integración e intercambio seguro y estandarizado de información clínica y administrativa entre diversas plataformas y servicios de salud institucional.</li>
+                        <li>Desarrollo Backend con PHP, JavaScript y Node.js.</li>
+                        <li>Desarrollo Frontend reactivo con Vue.js.</li>
+                        <li>Creación y consumo de servicios y APIs REST.</li>
+                        <li>Manejo y optimización de bases de datos relacionales PostgreSQL y MySQL.</li>
+                        <li>Implementación y soporte sobre el framework Symfony.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Conocimientos Técnicos</h3>
+                <ul>
+                    <li><b>Lenguajes y Entornos:</b> PHP, JavaScript, Node.js, SQL & PL/SQL, C & C++, HTML & CSS.</li>
+                    <li><b>Frameworks y Librerías:</b> Symfony, Vue.js, APIs REST e Interoperabilidad de Sistemas.</li>
+                    <li><b>Bases de Datos:</b> PostgreSQL, MySQL, MariaDB.</li>
+                    <li><b>Sistemas Operativos:</b> GNU/Linux, Windows.</li>
+                    <li><b>Redes y Equipos:</b> Cableado Estructurado, Cámaras CCTV, Mantenimiento de Hardware.</li>
+                    <li><b>Idiomas:</b> Inglés Técnico.</li>
+                    <li><b>Ofimática:</b> Paquetería de Microsoft Office.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer class="pie">
+        &copy; Copyright 2026 - Carlos Romero. Todos los derechos reservados.
+    </footer>
 </body>
 </html>

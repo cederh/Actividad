@@ -90,10 +90,40 @@ body {
     background-color: goldenrod;
 }
 
-.lateral h2,
-.lateral h3 {
-    margin-top: 5px;
+.lateral h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+}
+
+.bloque-lateral {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+}
+
+.bloque-lateral h3 {
+    margin-top: 0;
     margin-bottom: 5px;
+    font-size: 15px;
+    color: #013E5F;
+}
+
+.bloque-lateral p {
+    margin: 4px 0;
+    font-size: 13.5px;
+}
+
+.bloque-lateral ul {
+    margin: 4px 0;
+    padding-left: 18px;
+    font-size: 13.5px;
+}
+
+.bloque-lateral ul li {
+    margin-bottom: 3px;
 }
 
 .pie {
@@ -145,6 +175,13 @@ body {
     }
 
     .col-t-6 {
+        width: 100%;
+    }
+}
+
+/* En tablets, el lateral pasa a ocupar el 100% abajo */
+@media (min-width: 576px) and (max-width: 767px) {
+    .lateral {
         width: 100%;
     }
 }

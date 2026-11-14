@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; script-src 'self';">
+    <title>Portafolio Profesional - Proyectos</title>
+    <link rel="stylesheet" href="assets/css/proyectos.css">
 </head>
 <body>
-    
+    <header class="cabecera">
+        <h1>Carlos Romero | Portafolio Profesional</h1>
+        <p>Ingeniero en Sistemas Informáticos</p>
+    </header>
+
+    <div class="contenido">
+        <nav class="menu col-3 col-t-2">
+            <h2>Navegación</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="principal col-9 col-t-4">
+            <section>
+                <h2>Historial de Proyectos y Sistemas</h2>
+                <p>
+                    Registro técnico de los sistemas institucionales desarrollados en la <strong>DTIC - MINSAL</strong>
+                    y los proyectos académicos de formación. El trabajo institucional se caracteriza por la
+                    <strong>interoperabilidad entre sistemas</strong> de salud pública a nivel nacional.
+                </p>
+
+                <div class="tabla-contenedor">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre del Sistema / Proyecto</th>
+                                <th>Tecnologías</th>
+                                <th>Periodo</th>
+                                <th>Ámbito</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sistema Integrado de Salud (SIS)</td>
+                                <td>Symfony, PHP, PostgreSQL</td>
+                                <td>2022 - Actualidad</td>
+                                <td>MINSAL</td>
+                            </tr>
+                            <tr>
+                                <td>Cubo Bacteriológico</td>
+                                <td>Symfony, PHP, PostgreSQL</td>
+                                <td>2022 - Actualidad</td>
+                                <td>MINSAL</td>
+                            </tr>
+                            <tr>
+                                <td>Tamizaje Neonatal</td>
+                                <td>Vue.js, Node.js, API REST</td>
+                                <td>2022 - Actualidad</td>
+                                <td>MINSAL</td>
+                            </tr>
+                            <tr>
+                                <td>Módulo de Laboratorio</td>
+                                <td>PHP, PostgreSQL</td>
+                                <td>2022 - Actualidad</td>
+                                <td>MINSAL</td>
+                            </tr>
+                            <tr>
+                                <td>Control de Gestación (SIBASI Morazán)</td>
+                                <td>PHP, Bases de Datos, Web</td>
+                                <td>2020</td>
+                                <td>Tesis UES</td>
+                            </tr>
+                            <tr>
+                                <td>Cableado Estructurado y Redes</td>
+                                <td>Redes, Servidores, UTP</td>
+                                <td>2017 - 2018</td>
+                                <td>Servicio Social UES</td>
+                            </tr>
+                            <tr>
+                                <td>Portafolio Web Responsivo</td>
+                                <td>HTML5, CSS3, Box Model, CSP</td>
+                                <td>Noviembre 2026</td>
+                                <td>Académico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h3>Proyectos Académicos</h3>
+
+                <div class="card-proyecto">
+                    <h4>Sistema Informático para el Control y Seguimiento de Mujeres en Estado de Gestación</h4>
+                    <p class="meta"><strong>Tesis de Grado</strong> &bull; 2020 &bull; Universidad de El Salvador</p>
+                    <p>
+                        Desarrollado para el <strong>Sistema Básico de Salud Integral (SIBASI) de Morazán</strong>.
+                        Permite el monitoreo prenatal y control clínico preventivo de mujeres gestantes,
+                        aplicando conocimientos de base de datos y desarrollo web adquiridos durante la carrera.
+                    </p>
+                </div>
+
+                <div class="card-proyecto">
+                    <h4>Cableado Estructurado y Administración de Centros de Cómputos</h4>
+                    <p class="meta"><strong>Servicio Social</strong> &bull; 2017 - 2018 &bull; Universidad de El Salvador</p>
+                    <p>
+                        Participación en la implementación de infraestructura de red y administración de
+                        laboratorios de cómputo en instalaciones universitarias como parte del servicio social obligatorio.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="pie">
+        &copy; Copyright 2026 - Carlos Romero. Todos los derechos reservados.
+    </footer>
 </body>
 </html>

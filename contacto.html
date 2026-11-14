@@ -1,11 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; script-src 'self';">
+    <title>Portafolio Profesional - Contacto</title>
+    <link rel="stylesheet" href="assets/css/contacto.css">
 </head>
 <body>
-    
+    <header class="cabecera">
+        <h1>Carlos Romero | Portafolio Profesional</h1>
+        <p>Ingeniero en Sistemas Informáticos</p>
+    </header>
+
+    <div class="contenido">
+        <nav class="menu col-3 col-t-2">
+            <h2>Navegación</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="principal col-9 col-t-4">
+            <section>
+                <h2>Formulario de Contacto y Comunicación Segura</h2>
+                <p>
+                    Utilice este formulario validado para enviar propuestas laborales, solicitudes de consultoría o consultas de proyectos de desarrollo de software.
+                </p>
+
+                <form class="formulario-contacto" action="#" method="post" enctype="multipart/form-data">
+
+                    <fieldset class="seccion-formulario">
+                        <legend>1. Datos de Identificación</legend>
+
+                        <div class="campo">
+                            <label for="nombre">Nombre completo: *</label>
+                            <input type="text" id="nombre" name="nombre" required maxlength="60" placeholder="Ej: Juan Pérez">
+                            <span class="ayuda-campo">Campo obligatorio de texto (máx. 60 caracteres).</span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Correo electrónico de contacto: *</label>
+                            <input type="email" id="email" name="email" required maxlength="100" placeholder="nombre@dominio.com">
+                            <span class="ayuda-campo">Debe incluir un formato de correo válido con @ (máx. 100 caracteres).</span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="asunto">Asunto: *</label>
+                            <input type="text" id="asunto" name="asunto" required maxlength="100" placeholder="Ej: Propuesta de Proyecto Full Stack">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="seccion-formulario">
+                        <legend>2. Motivo y Preferencias de Contacto</legend>
+
+                        <div class="campo">
+                            <label for="motivo">Motivo o tipo de consulta: *</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="" disabled selected>-- Seleccione una opción --</option>
+                                <option value="oferta_laboral">Propuesta / Oferta Laboral</option>
+                                <option value="consultoria">Consultoría o Asesoría Técnica</option>
+                                <option value="desarrollo_web">Desarrollo Web (Symfony / Vue.js / APIs)</option>
+                                <option value="bases_datos">Bases de Datos (PostgreSQL / MySQL)</option>
+                                <option value="redes_soporte">Redes y Mantenimiento Informático</option>
+                                <option value="otro">Otro tipo de consulta</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label>Preferencia de respuesta / canal de contacto: *</label>
+                            <div class="grupo-opciones">
+                                <label class="opcion-inline" for="radio_email">
+                                    <input type="radio" id="radio_email" name="canal_contacto" value="email" checked>
+                                    Correo Electrónico
+                                </label>
+                                <label class="opcion-inline" for="radio_telefono">
+                                    <input type="radio" id="radio_telefono" name="canal_contacto" value="telefono">
+                                    Llamada / WhatsApp
+                                </label>
+                                <label class="opcion-inline" for="radio_videollamada">
+                                    <input type="radio" id="radio_videollamada" name="canal_contacto" value="videollamada">
+                                    Videollamada
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensaje">Detalle de su mensaje: *</label>
+                            <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="500" rows="5" placeholder="Escriba aquí los detalles de su mensaje, especificaciones o requerimientos (entre 10 y 500 caracteres)..."></textarea>
+                            <span class="ayuda-campo">Requiere entre 10 y 500 caracteres.</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="seccion-formulario">
+                        <legend>3. Archivos y Validación de Seguridad</legend>
+
+                        <div class="campo">
+                            <label for="archivo_adjunto">Adjuntar documento o requerimiento:</label>
+                            <input type="file" id="archivo_adjunto" name="archivo_adjunto" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
+                            <span class="ayuda-campo">Formatos permitidos: Documentos (.pdf, .doc, .docx) e Imágenes (.png, .jpg, .jpeg).</span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="clave_temporal">Contraseña temporal de seguimiento: *</label>
+                            <input type="password" id="clave_temporal" name="clave_temporal" required minlength="8" maxlength="30" placeholder="Mínimo 8 caracteres">
+                            <span class="ayuda-campo">Clave temporal para validación y seguimiento seguro (entre 8 y 30 caracteres).</span>
+                        </div>
+
+                        <div class="campo">
+                            <label class="opcion-inline" for="terminos">
+                                <input type="checkbox" id="terminos" name="terminos" required>
+                                <span>Acepto los términos y condiciones de tratamiento seguro y confidencial de datos. *</span>
+                            </label>
+                        </div>
+
+                        <div class="campo">
+                            <label class="opcion-inline" for="copia_email">
+                                <input type="checkbox" id="copia_email" name="copia_email">
+                                <span>Deseo recibir una copia de confirmación de este mensaje en mi correo.</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="acciones-formulario">
+                        <button type="submit" class="boton">Enviar Mensaje</button>
+                        <button type="reset" class="boton boton-secundario">Limpiar Formulario</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer class="pie">
+        &copy; Copyright 2026 - Carlos Romero. Todos los derechos reservados.
+    </footer>
 </body>
 </html>
